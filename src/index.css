@@ -1,0 +1,44 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+/* Sleek Webkit Scrollbars */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(168, 162, 158, 0.5) transparent;
+}
+
+.dark * {
+  scrollbar-color: rgba(87, 83, 78, 0.6) transparent;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.02);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(168, 162, 158, 0.5); /* stone-400 */
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(185, 28, 28, 0.8); /* red-700 */
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(87, 83, 78, 0.6); /* stone-600 */
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: rgba(239, 68, 68, 0.9); /* red-500 */
+}
